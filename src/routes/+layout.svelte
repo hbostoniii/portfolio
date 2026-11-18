@@ -2,6 +2,7 @@
 	import './layout.css';
 	import favicon from '#lib/assets/HB3 favicon.svg';
 	import type { LayoutProps } from './$types';
+	import Header from './components/Header.svelte';
 
 	let { children }: LayoutProps = $props();
 </script>
@@ -11,3 +12,5 @@
 </svelte:head>
 
 {@render children()}
+
+<Header />
